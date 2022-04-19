@@ -1,0 +1,626 @@
+/*Eliminar parametros por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Agregar fuente*/
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+/*Color de fondo Body proyecto*/
+.fondoBody{
+    background-color: #4A403A;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sec1 sec1 sec1 sec1"
+    "sec2 sec2 sec2 sec2"
+    "footer footer footer footer";
+}
+
+/*Header para todo el proyecto*/
+.header{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat,Helvetica;
+    background-color: #1f1e1e;
+    background: rgba(0, 0, 0, 0.850);
+    width: 100%;
+    height: 70px;
+}
+
+.header img{
+    background-color: #1f1e1e;
+    background: rgba(0,0,0,0.850);
+    width: 80%; 
+    height: auto; 
+}
+
+.header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li{
+    margin: 15px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F7CCAC;
+}
+
+.header nav ul li a:hover{
+    transition: 0.5s;
+    color:bisque;
+    text-shadow: 2px 2px 2px 2px bisque;
+}
+
+
+/*Section index parte 1*/
+.section__one{
+    grid-area: sec1;
+    margin-top: 5vh;
+    padding: 20px;
+}
+
+.section__one h1{
+    font-family: Montserrat,Helvetica;
+    font-weight: bold;
+    padding: 10px;
+    color: #F7CCAC;
+    margin-left: 100px;
+}
+
+.section__one article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__one img{
+    border-radius: 25px;
+    height: 60vh;
+    width: 60vh;
+}
+
+.section__one p{
+    font-family: Montserrat,Helvetica;
+    word-spacing: 5px;
+    text-align: justify;
+    color: #C69B7B;
+    font-size: 20px;
+    width: 40%;
+    padding: 20px;
+    border: solid #F7CCAC;
+    border-radius: 10px;
+    min-width: 360px;
+}
+
+
+/*Section index parte 2*/
+
+.section__two{
+    grid-area: sec2;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.section__two h2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-family: Montserrat,Helvetica;
+    font-weight: bold;
+    padding: 10px;
+    color: #F7CCAC;
+    margin-left: 50px;
+}
+
+.section__two article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__two p{
+    font-family: Montserrat,Helvetica;
+    word-spacing: 5px;
+    text-align: justify;
+    color: #C69B7B;
+    font-size: 20px;
+    width: 40%;
+    padding: 20px;
+    border: solid #F7CCAC;
+    border-radius: 10px;
+    min-width: 360px;
+}
+
+
+/*Footer proyecto*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.696);
+    width: 100%;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer img{
+    width: 35px;
+    margin: 7.5px;
+}
+
+
+/*Formulario*/
+.form{
+    padding: 30px;
+    font-family: Montserrat, Helvetica;
+    font-size: 18px;
+    color: #F7CCAC;
+}
+
+.form fieldset{
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form fieldset legend{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Pagina Musica */
+
+.grid__musica{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "sec1"
+    "sec2"
+    "footer";
+}
+
+.musica{
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, Helvetica;
+}
+
+.musica h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:#C69B7B;
+    font-size: 30px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.musica__section__one{
+    grid-area: sec1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.musica__section__one p{
+    color: #C69B7B;
+    font-size: 20px;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.musica__section__one article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+
+.musica__section__two{
+    grid-area: sec2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.musica__section__two p{
+    font-size: 20px;
+    color: #C69B7B;
+    margin-bottom: 3%;
+}
+
+.musica__section__two article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Responsive */
+
+/* 360px index */
+@media only screen and (max-width:360px){
+    .grid{
+        display: grid;
+        grid-template-areas:
+        "nav nav"
+        "sec1 sec1"
+        "sec2 sec2"
+        "footer footer"; 
+    }
+
+    .header{
+        justify-content: center;
+        max-width: 100%;
+        font-size: 11px;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .header nav ul li{
+        margin: 5px;
+    }
+
+    .section__one{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    
+    .section__one h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    .section__one article{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .section__one img{
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .section__one p{
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+        width: 100%;
+        border: none;
+    }
+
+    .section__two{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+    }
+
+    .section__two h2{
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    .section__two article{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section__two p{
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+        width: 100%;
+        border: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .footer div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* 360px musica */
+@media only screen and (max-width:360px){
+    .grid__musica{
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "sec1"
+        "sec2"
+        "footer"; 
+    }
+
+    .header{
+        justify-content: center;
+        max-width: 100%;
+        font-size: 11px;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .header nav ul li{
+        margin: 5px;
+    }
+
+    .musica h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    .musica__section__one{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin-bottom: 30%;
+    }
+    
+
+    .musica__section__one article{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .musica__section__two{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    .musica__section__two article{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .musica__section__two p{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .footer div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:550px){
+    .header{
+        justify-content: center;
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .header img{
+        display: none;
+    }
+}
+
+/* 768px index */
+
+@media only screen and (min-width:361px) and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-areas:
+        "nav nav"
+        "sec1 sec1"
+        "sec2 sec2"
+        "footer footer"; 
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .header nav ul li{
+        margin: 7px;
+    }
+
+    .section__one{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    
+    .section__one h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    .section__one article{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .section__one img{
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .section__one p{
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        width: 100%;
+        border: none;
+    }
+
+    .section__two{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+
+    .section__two h2{
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    .section__two article{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section__two p{
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        width: 100%;
+        border: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .footer div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* 768px musica */
+
+@media only screen and (min-width:361px) and (max-width:768px){
+    .grid__musica{
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "sec1"
+        "sec2"
+        "footer"; 
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .header nav ul li{
+        margin: 5px;
+    }
+
+    .musica h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    .musica__section__one{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin-bottom: 0%;
+    }
+    
+
+    .musica__section__one article{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 5%;
+    }
+
+    .musica__section__two{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+
+    .musica__section__two article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+
+    .musica__section__two p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .footer div{
+        display: flex;
+        flex-direction: row;
+    }
+}
