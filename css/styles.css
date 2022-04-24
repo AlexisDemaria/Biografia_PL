@@ -73,6 +73,7 @@
     grid-area: sec1;
     margin-top: 5vh;
     padding: 20px;
+    margin-bottom: 5%;
 }
 
 .section__one h1{
@@ -118,12 +119,24 @@
 }
 
 
+.container-fluid div img{
+    width: 100%;
+    height: 300px;
+	background-image: url('../images/paulo/hqescenario.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.55)), url('../images/paulo/hqescenario.jpg');
+}
+
+
 /*Section index parte 2*/
 
 .section__two{
     grid-area: sec2;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .section__two h2{
