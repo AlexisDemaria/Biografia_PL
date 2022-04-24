@@ -1,5 +1,5 @@
-<h1 align="center">Hola! 👋, Me llamo Alexis Demaria</h1>
-<h3 align="center">En este proyecto veremos novedades, información, fotos y una biografía no autorizada del cantante cordobés Paulo Londra..</h3>
+<h1 align="center">Hola! 👋, me llamo Alexis Demaria</h1>
+<h3 align="center">En este proyecto veremos novedades, información, fotos y una biografía no autorizada del cantante cordobés Paulo Londra.</h3>
 
 - Si desea ver el sitio web **https://alexisdemaria.github.io/Biografia_PL/**
 
