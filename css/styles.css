@@ -180,26 +180,6 @@
 }
 
 
-/*Formulario*/
-.form{
-    padding: 30px;
-    font-family: Montserrat, Helvetica;
-    font-size: 18px;
-    color: #F7CCAC;
-}
-
-.form fieldset{
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.form fieldset legend{
-    font-size: 22px;
-    font-weight: bold;
-}
-
 /* Pagina Musica */
 
 .grid__musica{
@@ -271,6 +251,70 @@
     align-items: center;
 }
 
+
+
+/*Pagina Formulario*/
+/* .grid_contacto{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "form"
+    "footer";
+} */
+
+
+/* .form{
+    grid-area: form;
+} */
+
+.contact{
+    padding: 5%;
+    height: 400px;
+    margin-bottom: 20%;
+}
+
+.contact div button{
+    margin-top: 5px;
+}
+
+.col-md-3{
+    background: #F7CCAC;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form button{
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+/* @media only screen and (max-width:360px){
+    .grid_contacto{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "form"
+        "footer";   
+    }
+} */    
 
 
 /* Responsive */
