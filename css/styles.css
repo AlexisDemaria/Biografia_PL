@@ -20,10 +20,10 @@
 .grid{
     display: grid;
     grid-template-areas:
-    "nav nav nav nav"
-    "sec1 sec1 sec1 sec1"
-    "sec2 sec2 sec2 sec2"
-    "footer footer footer footer";
+    "nav nav"
+    "sec1 sec1"
+    "sec2 sec2"
+    "footer footer";
 }
 
 /*Header para todo el proyecto*/
@@ -35,6 +35,7 @@
     font-family: Montserrat,Helvetica;
     background: rgba(0, 0, 0, 0.850);
     width: 100%;
+    height: 75px;
 }
 
 .header img{
@@ -50,7 +51,7 @@
 }
 
 .header nav ul li{
-    margin: 15px;
+    margin: 5px;
 }
 
 .header nav ul li a{
@@ -279,10 +280,10 @@
     .grid{
         display: grid;
         grid-template-areas:
-        "nav nav"
-        "sec1 sec1"
-        "sec2 sec2"
-        "footer footer"; 
+        "nav"
+        "sec1"
+        "sec2"
+        "footer"; 
     }
 
     .header{
@@ -464,10 +465,10 @@
     .grid{
         display: grid;
         grid-template-areas:
-        "nav nav"
-        "sec1 sec1"
-        "sec2 sec2"
-        "footer footer"; 
+        "nav"
+        "sec1"
+        "sec2"
+        "footer"; 
     }
 
     .header{
