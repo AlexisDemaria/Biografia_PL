@@ -172,6 +172,17 @@
     min-width: 360px;
 }
 
+.section__two img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    
+}
+
+.section__two iframe{
+    position: relative;
+    left: 10%;
+}
 
 /*Footer proyecto*/
 .footer{
@@ -267,18 +278,8 @@
 
 
 /*Pagina Formulario*/
-/* .grid_contacto{
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "form"
-    "footer";
-} */
 
 
-/* .form{
-    grid-area: form;
-} */
 
 .contact{
     padding: 5%;
@@ -319,15 +320,6 @@
     width: 25%;
 }
 
-/* @media only screen and (max-width:360px){
-    .grid_contacto{
-        display: grid;
-        grid-template-areas: 
-        "nav"
-        "form"
-        "footer";   
-    }
-} */    
 
 
 /* Responsive */
