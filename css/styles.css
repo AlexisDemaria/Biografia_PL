@@ -356,10 +356,12 @@
         max-width: 100%;
     }
 
+    
     .section__one{
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
+        max-width: 100%;
     }
     
     .section__one h1{
@@ -386,8 +388,8 @@
     .section__one article p{
         flex-wrap: wrap;
         margin-bottom: 10%;
-        width: 100%;
         border: none;
+        max-width: 100%;
     }
 
     .container-fluid div img{
@@ -401,11 +403,13 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 10%;
+        max-width: 100%;
     }
 
     .section__two h2{
         font-size: 22px;
         margin-left: 0px;
+        max-width: 100%;
     }
 
     .section__two article{
@@ -417,7 +421,7 @@
     .section__two article p{
         flex-wrap: wrap;
         margin-bottom: 10%;
-        width: 100%;
+        max-width: 100%;
         border: none;
     }
 
