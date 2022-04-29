@@ -1,0 +1,27 @@
+{
+  "name": "biografia_pl",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola! 👋, me llamo Alexis Demaria</h1>\r <h3 align=\"center\">En este proyecto veremos novedades, información, fotos y una biografía no autorizada del cantante cordobés Paulo Londra.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles_scss.scss css/styles_css.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisDemaria/Biografia_PL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisDemaria/Biografia_PL/issues"
+  },
+  "homepage": "https://github.com/AlexisDemaria/Biografia_PL#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
