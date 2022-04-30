@@ -12,9 +12,10 @@
     src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 }
 
-/*Color de fondo Body proyecto*/
+/*Body proyecto*/
 .fondoBody{
     background-color: #4A403A;
+    font-family: Montserrat, Helvetica;
 }
 
 .grid{
@@ -26,7 +27,7 @@
     "footer footer";
 }
 
-/*Header para todo el proyecto*/
+/*Header  proyecto*/
 .header{
     grid-area: nav;
     display: flex;
@@ -67,8 +68,28 @@
     text-shadow: 2px 2px 2px 2px bisque;
 }
 
+/*Footer proyecto*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.696);
+    width: 100%;
+}
 
-/*Section index parte 1*/
+.footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer img{
+    width: 35px;
+    margin: 7.5px;
+}
+
+/* Index */
+
+/*Section 1 index*/
 .section__one{
     grid-area: sec1;
     margin-top: 5vh;
@@ -119,7 +140,7 @@
 }
 
 
-.container-fluid div img{
+.main_index div img{
     width: 100%;
     height: 300px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/paulo/hqescenario.jpg');
@@ -130,7 +151,7 @@
 }
 
 
-/*Section index parte 2*/
+/*Section 2 index*/
 
 .section__two{
     grid-area: sec2;
@@ -184,25 +205,6 @@
     height: 500px;
 }
 
-
-/*Footer proyecto*/
-.footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: space-around;
-    background: rgba(0, 0, 0, 0.696);
-    width: 100%;
-}
-
-.footer div{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer img{
-    width: 35px;
-    margin: 7.5px;
-}
 
 
 
@@ -277,10 +279,25 @@
     align-items: center;
 }
 
+/* Galeria */
+
+.main__galeria h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #C69B7B;
+    margin-top: 3%;
+}
+
+.carrusel__galeria{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 
 /*Pagina Formulario*/
-
 
 
 .contact{
@@ -337,17 +354,13 @@
         "footer"; 
     }
 
-    .header{
-        max-width: 100%;
-        font-size: 11px;
-    }
 
     .header img{
         display: none;
     }
 
     .header nav ul li{
-        margin: 4px;
+        margin: 5px;
     }
 
     .navbar-nav{
@@ -392,7 +405,7 @@
         max-width: 100%;
     }
 
-    .container-fluid div img{
+    .main div img{
         display: flex;
         flex-wrap: wrap;
         max-width: 360px;
@@ -475,6 +488,7 @@
         flex-wrap: wrap;
         padding: 0px;
         margin-bottom: 30%;
+        max-width: 100%;
     }
     
 
@@ -490,6 +504,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 20%;
+        max-width: 100%;
     }
 
     .musica__section__two article{
@@ -513,6 +528,14 @@
         font-size: 12px;
     }
 
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    
     .header img{
         display: none;
     }
@@ -530,23 +553,16 @@
         "footer"; 
     }
 
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 100%;
-        font-size: 14px;
-    }
-
     .header nav ul li{
-        margin: 7px;
+        margin: 5px;
     }
 
     .navbar-nav{
         display: flex;
         flex-direction: row;
         max-width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .section__one{
@@ -580,7 +596,7 @@
         border: none;
     }
 
-    .container-fluid img{
+    .main div img{
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
@@ -614,7 +630,7 @@
     .section__two div img{
         display: flex;
         flex-wrap: wrap;
-        max-height: 300px;
+        max-height: 450px;
         max-width: 100%;
     }
 
