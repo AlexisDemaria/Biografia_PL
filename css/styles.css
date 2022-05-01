@@ -12,22 +12,18 @@
     src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 }
 
+
 /*Body proyecto*/
-.fondoBody{
+.body{
     background-color: #4A403A;
     font-family: Montserrat, Helvetica;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.grid{
-    display: grid;
-    grid-template-areas:
-    "nav nav"
-    "sec1 sec1"
-    "sec2 sec2"
-    "footer footer";
-}
 
-/*Header  proyecto*/
+/*Header proyecto*/
 .header{
     grid-area: nav;
     display: flex;
@@ -68,6 +64,7 @@
     text-shadow: 2px 2px 2px 2px bisque;
 }
 
+
 /*Footer proyecto*/
 .footer{
     grid-area: footer;
@@ -75,6 +72,7 @@
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.696);
     width: 100%;
+    margin-top: auto;
 }
 
 .footer div{
@@ -87,7 +85,19 @@
     margin: 7.5px;
 }
 
+
+
+
 /* Index */
+
+.grid__index{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "sec1 sec1"
+    "sec2 sec2"
+    "footer footer";
+}
 
 /*Section 1 index*/
 .section__one{
@@ -133,14 +143,13 @@
     color: #C69B7B;
     font-size: 20px;
     width: 40%;
-    padding: 20px;
-    border: solid #F7CCAC;
-    border-radius: 10px;
     min-width: 360px;
 }
 
 
-.main_index div img{
+/*Parallax index*/
+
+.parallax__index{
     width: 100%;
     height: 300px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/paulo/hqescenario.jpg');
@@ -148,6 +157,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
 }
 
 
@@ -186,9 +196,6 @@
     color: #C69B7B;
     font-size: 20px;
     width: 40%;
-    padding: 20px;
-    border: solid #F7CCAC;
-    border-radius: 10px;
     min-width: 360px;
 }
 
@@ -219,13 +226,13 @@
     "footer";
 }
 
-.musica{
+.main__musica{
     display: flex;
     flex-direction: column;
     font-family: Montserrat, Helvetica;
 }
 
-.musica h1{
+.main__musica h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -279,7 +286,10 @@
     align-items: center;
 }
 
-/* Galeria */
+
+
+
+/*Pagina Galeria */
 
 .main__galeria h1{
     display: flex;
@@ -295,6 +305,8 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+
 
 
 /*Pagina Formulario*/
@@ -334,10 +346,10 @@
 }
 
 .contact-form button{
-    color: #fff;
     font-weight: 600;
     width: 25%;
 }
+
 
 
 
@@ -354,7 +366,6 @@
         "footer"; 
     }
 
-
     .header img{
         display: none;
     }
@@ -368,7 +379,6 @@
         flex-direction: row;
         max-width: 100%;
     }
-
     
     .section__one{
         display: flex;
@@ -388,27 +398,29 @@
     .section__one article{
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        max-width: 100%;
     }
 
     .section__one article img{
         flex-wrap: wrap;
         max-width: 100%;
         max-height: 100%;
+        transition: none;
+        padding: 10px;
     }
 
+    .section__one img:hover{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
     .section__one article p{
         flex-wrap: wrap;
         margin-bottom: 10%;
-        border: none;
-        max-width: 100%;
+        padding: 10px;
     }
 
-    .main div img{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 360px;
+    .parallax__index{
+        max-width: 100%;
         max-height: 200px;
     }
 
@@ -422,33 +434,29 @@
     .section__two h2{
         font-size: 22px;
         margin-left: 0px;
-        max-width: 100%;
     }
 
     .section__two article{
         flex-wrap: wrap;
         flex-direction: column;
-        max-width: 100%;
     }
 
     .section__two article p{
         flex-wrap: wrap;
         margin-bottom: 10%;
-        max-width: 100%;
-        border: none;
+        padding: 10px;
     }
 
+    .section__two article div iframe{
+        max-width: 100%;
+        max-height: 80px;
+    }
 
     .section__two article div img{
         display: flex;
         flex-wrap: wrap;
         max-height: 300px;
         max-width: 100%;
-    }
-
-    .section__two article div iframe{
-        max-width: 100%;
-        max-height: 80px;
     }
 
     .footer{
@@ -521,6 +529,24 @@
 
 }
 
+
+/* 360px Formulario */
+@media only screen and (max-width:360px){
+    .col-md-3{
+
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .col-md-9{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }  
+}
+
+/* Eliminar imagen header */
 @media (max-width:550px){
     .header{
         justify-content: center;
@@ -541,8 +567,9 @@
     }
 }
 
-/* 768px index */
 
+
+/* 768px index */
 @media only screen and (min-width:361px) and (max-width:768px){
     .grid{
         display: grid;
@@ -562,13 +589,13 @@
         flex-direction: row;
         max-width: 100%;
         justify-content: center;
-        align-items: center;
     }
 
     .section__one{
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
+        max-width: 100%;
     }
     
     .section__one h1{
@@ -593,10 +620,10 @@
         flex-wrap: wrap;
         margin-bottom: 5%;
         width: 100%;
-        border: none;
+        padding: 10px;
     }
 
-    .main div img{
+    .parallax__index{
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
@@ -607,6 +634,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 5%;
+        max-width: 100%;
     }
 
     .section__two h2{
@@ -623,19 +651,18 @@
         flex-wrap: wrap;
         margin-bottom: 5%;
         width: 100%;
-        border: none;
+        padding: 10px;
     }
-
 
     .section__two div img{
         display: flex;
         flex-wrap: wrap;
-        max-height: 450px;
+        max-height: 400px;
         max-width: 100%;
     }
 
     .section__two div iframe{
-        max-width: 100%;
+        max-width: 95%;
         max-height: 80px;
     }
 
@@ -653,8 +680,8 @@
 }
 
 
-/* 768px musica */
 
+/* 768px musica */
 @media only screen and (min-width:361px) and (max-width:768px){
     .grid__musica{
         display: grid;
@@ -706,17 +733,5 @@
     .musica__section__two p{
         display: flex;
         flex-direction: column;
-    }
-
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
-    }
-
-    .footer div{
-        display: flex;
-        flex-direction: row;
     }
 }
