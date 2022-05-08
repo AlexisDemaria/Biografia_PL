@@ -237,7 +237,7 @@
     font-weight: bold;
     font-size: 30px;
     color: #C69B7B;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .musica__section__one{
@@ -286,9 +286,42 @@
 
 
 
+
+/*Pagina Galeria */
+
+.main__galeria h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #C69B7B;
+    margin-top: 2%;
+}
+
+.carrusel__galeria{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+
 /* Pagina Noticias */
 
-.main__noticias{
+.main__noticias h1{ 
+    grid-area: noticias; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #C69B7B;
+    margin-top: 2%;
+
+}
+
+.section__noticias{
     width: 90%;
     margin: 20px auto;
     display: grid;
@@ -301,19 +334,8 @@
     "link4 link5 link6";
 }
 
-.titulo__noticias{ 
-    grid-area: noticias; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 30px;
-    color: #C69B7B;
-    margin-top: 2%;
 
-}
-
-.main__noticias h3{
+.section__noticias h3{
     font-size: 18px;
     color:#F7CCAC;
     text-align: justify;
@@ -436,33 +458,21 @@
 
 
 
-/*Pagina Galeria */
+/*Pagina Contacto*/
 
-.main__galeria h1{
+.main__contacto h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-weight: bold;
     font-size: 30px;
     color: #C69B7B;
-    margin-top: 3%;
+    margin-top: 2%;
 }
-
-.carrusel__galeria{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-
-
-
-/*Pagina Formulario*/
-
 
 .contact{
     padding: 5%;
-    height: 400px;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 
 .contact div button{
@@ -1043,4 +1053,22 @@
     .link6__noticias{
         margin-bottom: 10%;
     }
+}
+
+
+
+/* 768px Contacto */
+@media only screen and (min-width:360px) and (max-width:768px){
+    .col-md-3{
+
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .col-md-9{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }  
 }
