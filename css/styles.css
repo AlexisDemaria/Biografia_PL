@@ -92,10 +92,11 @@
 .grid__index{
     display: grid;
     grid-template-areas:
-    "nav nav"
-    "sec1 sec1"
-    "sec2 sec2"
-    "footer footer";
+    "nav"
+    "sec1"
+    "parallax"
+    "sec2"
+    "footer";
 }
 
 /*Section 1 index*/
@@ -149,6 +150,7 @@
 /*Parallax index*/
 
 .parallax__index{
+    grid-area: parallax;
     width: 100%;
     height: 300px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images/paulo/hqescenario.jpg');
@@ -691,7 +693,7 @@
 
 /* 360px Noticias */
 @media only screen and (max-width:360px){
-    .main__noticias{
+    .section__noticias{
         display: grid;
         grid-template-areas:
         "noticias"
@@ -959,7 +961,7 @@
 
 /* 620px Noticias */
 @media only screen and (min-width:361px) and (max-width:620px){
-    .main__noticias{
+    .section__noticias{
         display: grid;
         grid-template-areas:
         "noticias"
@@ -1012,7 +1014,7 @@
 
 /* 768px Noticias */
 @media only screen and (min-width:621px) and (max-width:768px){
-    .main__noticias{
+    .section__noticias{
         display: grid;
         grid-template-areas:
         "noticias noticas"

@@ -26,7 +26,7 @@ body{
 
 
 /*Header proyecto*/
-header{
+.header{
     grid-area: nav;
     display: flex;
     justify-content: space-between;
@@ -37,37 +37,37 @@ header{
     height: 75px;
 
     img{
-        background: $bgColorNav;
+        background: rgba(0,0,0,0.850);
         width: 80%; 
         height: auto; 
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin: 0px;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $colorPpal;
 
-        nav ul{
-            display: flex;
-            list-style: none;
+                &:hover{
+                    transition: 0.5s;
+                    color:bisque;
+                    text-shadow: 2px 2px 2px 2px bisque;
 
-            li{
-                margin: 0px;
-
-                a{
-                    text-decoration: none;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    color: $colorPpal;
-
-                    &:hover{
-                        transition: 0.5s;
-                        color:bisque;
-                        text-shadow: 2px 2px 2px 2px bisque;
-
-                    }
                 }
+
             }
+
         }
     }
+
 }
 
 /*Footer proyecto*/
-footer{
+.footer{
 
     grid-area: footer;
     display: flex;

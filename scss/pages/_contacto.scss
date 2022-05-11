@@ -1,0 +1,85 @@
+@import "pages/variables";
+
+/*Pagina Contacto*/
+
+.main__contacto h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: $colorPpal;
+    margin-top: 2%;
+}
+
+.contact{
+    padding: 5%;
+    margin-bottom: 5%;
+    
+    div button{
+        margin-top: 5px;
+    }
+}
+
+
+.col-md-3{
+    background: $colorPpal;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+
+    img{
+        margin-bottom: 15%;
+    }
+
+    h2{
+        margin-bottom: 10%;
+    }
+}
+
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form button{
+    font-weight: 600;
+    width: 25%;
+}
+
+/* 360px Formulario */
+@media only screen and (max-width:360px){
+    .col-md-3{
+
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .col-md-9{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }  
+}
+
+/* 768px Contacto */
+@media only screen and (min-width:360px) and (max-width:768px){
+    .col-md-3{
+
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .col-md-9{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }  
+}
