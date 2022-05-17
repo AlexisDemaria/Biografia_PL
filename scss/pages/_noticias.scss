@@ -303,3 +303,48 @@
         margin-bottom: 10%;
     }
 }
+
+/* 1024px Noticias */
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .section__noticias{
+        display: grid;
+        grid-template-areas:
+        "noticias noticas"
+        "ppal ppal"
+        "link1 link2"
+        "link3 link4"
+        "link5 link6";
+        justify-content: center;
+
+    }
+
+    .ppal__noticias img{
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10%;
+    }
+
+    .link1__noticias{
+        margin-bottom: 30%;
+    }
+
+    .link2__noticias{
+        margin-bottom: 30%;
+    }
+
+    .link3__noticias{
+        margin-bottom: 30%;
+    }
+    
+    .link4__noticias{
+        margin-bottom: 30%;
+    }
+
+    .link5__noticias{
+        margin-bottom: 10%;
+    }
+    
+    .link6__noticias{
+        margin-bottom: 10%;
+    }
+}
