@@ -1,7 +1,6 @@
 @import "pages/variables";
 
 /*Pagina Galeria */
-
 .main__galeria h1{
     display: flex;
     flex-direction: row;
@@ -9,10 +8,14 @@
     font-weight: bold;
     font-size: 30px;
     color: $colorPpal;
-    margin-top: 2%;
+    margin-top: 100px;
 }
 
 .carrusel__galeria{
-    margin-top: 5%;
+    margin-top: 50px;
     margin-bottom: 5%;
+    p{
+        color: $colorSec;
+        font-size: 20px;
+    }
 }

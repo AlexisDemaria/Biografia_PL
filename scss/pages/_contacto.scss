@@ -1,7 +1,6 @@
 @import "pages/variables";
 
 /*Pagina Contacto*/
-
 .main__contacto h1{
     display: flex;
     flex-direction: row;
@@ -9,7 +8,7 @@
     font-weight: bold;
     font-size: 30px;
     color: $colorPpal;
-    margin-top: 2%;
+    margin-top: 100px;
 }
 
 .contact{
@@ -21,13 +20,13 @@
     }
 }
 
-
 .col-md-3{
     background: $colorPpal;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
+
 .contact-info{
     margin-top:10%;
 
@@ -52,6 +51,7 @@
     width: 25%;
 }
 
+
 /* 360px Formulario */
 @media only screen and (max-width:360px){
     .col-md-3{
@@ -60,7 +60,6 @@
         border-top-right-radius: 0.5rem;
         border-bottom-left-radius: 0rem;
     }
-
     .col-md-9{
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
@@ -71,12 +70,10 @@
 /* 768px Contacto */
 @media only screen and (min-width:360px) and (max-width:768px){
     .col-md-3{
-
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
         border-bottom-left-radius: 0rem;
     }
-
     .col-md-9{
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
