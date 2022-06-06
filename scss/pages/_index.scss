@@ -100,37 +100,11 @@
 
 /* 360px index */
 @media only screen and (max-width:360px){
-    .header{
-        img{
-            display: none;
-        }
-        nav ul li{
-            margin: 3px;
-        }
-    }
-
-    .navbar{
-        width: 100%;
-        div{
-            button{
-            }
-            div{
-                ul{
-                    margin-top: 130px;
-                    flex-direction: column;
-                }
-            }
-        }
-    }
-    .nav-link{
-        color: $colorPpal !important; // Perdon por usar este important, no me gusta usarlos y no hay otro más en todo el proyecto, pero no vi manera alguna de cambiarle el color a los links del navbar de Bootstrap.
-    }
-    
     .section__one{
         flex-direction: column;
         max-width: 100%;
         margin-bottom: 20%;
-        margin-top: 20%;
+        margin-top: 100px;
         article{
             div{
                 h1{
@@ -187,49 +161,13 @@
         }
     }
 
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
-        div{
-            display: flex;
-            flex-direction: row;
-        }
-    }
+
 }
 
-/* Eliminar imagen header */
-@media (max-width:620px){
-    .header{
-        justify-content: center;
-        max-width: 100%;
-        font-size: 12px;
-    }
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-        justify-content: center;
-    }
-    
-    .header img{
-        display: none;
-    }
-}
+
 
 /* 768px index */
 @media only screen and (min-width:361px) and (max-width:768px){
-    .header nav ul li{
-        margin: 5px;
-    }
-
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
     .section__one{
         flex-direction: column;
         max-width: 100%;
@@ -289,31 +227,10 @@
             }
         }
     }
-
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 100%;
-        div{
-            display: flex;
-            flex-direction: row;
-        }
-    }
 }
 
 /* 1600px Index */
 @media only screen and (min-width:769px) and (max-width:1610px){
-    .header nav ul li{
-        margin: 5px;
-    }
-
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
     .section__one{
         flex-direction: column;
         max-width: 100%;
